@@ -295,6 +295,10 @@ body {
     max-width: 300px;
   }
 }
+.vocabulario .table {
+  max-width: 200px;
+}
+
 @media (max-width: 800px) {
   section .error {
     max-width: 300px;
