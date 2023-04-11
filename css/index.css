@@ -265,6 +265,36 @@ body {
   font-weight: 700;
 }
 
+.sables .card {
+  z-index: -2;
+  margin-top: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sables .table {
+  max-width: 900px;
+}
+.sables img {
+  max-width: 400px;
+}
+
+@media (max-width: 800px) {
+  .sables .card {
+    flex-direction: column;
+  }
+  .sables .card-title {
+    font-size: 1rem;
+  }
+  .sables .table td {
+    display: flex;
+    font-size: 0.8rem;
+  }
+  .sables .table td img {
+    max-width: 300px;
+  }
+}
 @media (max-width: 800px) {
   section .error {
     max-width: 300px;

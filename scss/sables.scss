@@ -1,0 +1,40 @@
+.sables{
+    .card{
+        z-index: -2;
+        margin-top: 20px;
+        background-color: transparent;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .table{
+        max-width: 900px;
+    }
+    
+    img{
+        max-width: 400px;
+    }
+}
+@media (max-width: 800px) {
+    .sables{
+        .card{
+            &-title{
+                font-size: 1rem;
+            }
+            flex-direction: column;
+        }
+        .table{
+            td{
+                display: flex;
+                font-size: 0.8rem;
+                img{
+                max-width: 300px;
+            }
+            }
+            
+        }
+
+    }
+    
+}
