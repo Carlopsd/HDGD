@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap');
+
+*{
+    font-family: 'Lora', serif;
+}
+
+body{
+    background-image: url("../media/LOGO/fondo.gif");
+    background-size : 400px 400px;
+    background-position : 50% 50%;
+    background-repeat : no-repeat ; 
+    background-attachment: fixed;
+
+    height : 100%;
+    padding-bottom: 20px;
+}
+@media (max-width:800px){
+    body{
+        background-size : 200px 200px;
+    }
+}
+
+// menu desplegable
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    clip-path: circle(15px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+
+    &-btn{
+        background-color: #fff;
+        position: fixed;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    ul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo{
+            width:50%;
+            height:50%;
+            border-radius: 50%;
+        }
+        li{
+            text-align: center;
+
+            a{
+                position: relative;
+                line-height: 40px;
+                transition: all 0.3s ease;
+                padding: 5px 5px;
+            
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .active{
+                font-weight: 600;
+                border-bottom: 1px solid #000;
+            }
+            &:hover{
+                color: gray;
+            }
+        }
+    }
+}
+#button:checked ~ .menu{
+    clip-path: circle(75%);
+}
+
+#button:checked ~ .menu-btn{
+    color: gray;
+    background-color: transparent;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+section{
+    padding-top: 70px;
+}
+@keyframes rotate {
+        0%{
+        filter: hue-rotate(0deg);
+        }
+        100%{
+        filter: hue-rotate(360deg);
+        }
+    }
+@media (max-width:1300px) {
+    .menu{
+        ul{
+            overflow-x: scroll;
+        }                           
+        
+    }
+}
+@media (min-width:1000px) {
+    .menu{
+        height: 100px;
+        overflow: hidden;
+        ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        li{
+            padding: 10px;
+            a{
+                line-height: 15pt; 
+            }
+        }
+    }    
+    }    
+    section{
+        padding-top: 100px
+    }
+}

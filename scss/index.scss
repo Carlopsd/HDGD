@@ -1,0 +1,21 @@
+@import "componentes.scss";
+
+@import "inicio.scss";
+
+@import "escudo.scss";
+
+@import "historia.scss";
+
+@import "contactos.scss";
+
+@import "beneficios.scss";
+
+
+@media (max-width:800px) {
+    section{
+        .error{
+        max-width: 300px;
+    }
+    }
+    
+}

@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  font-family: "Lora", serif;
+}
+
+body {
+  background-image: url("../media/LOGO/fondo.gif");
+  background-size: 400px 400px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-size: 200px 200px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  clip-path: circle(15px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+}
+.menu-btn {
+  background-color: #fff;
+  position: fixed;
+  z-index: 2;
+  right: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu ul .logo {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+.menu ul li {
+  text-align: center;
+}
+.menu ul li a {
+  position: relative;
+  line-height: 40px;
+  transition: all 0.3s ease;
+  padding: 5px 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.menu ul li .active {
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+}
+.menu ul li:hover {
+  color: gray;
+}
+
+#button:checked ~ .menu {
+  clip-path: circle(75%);
+}
+
+#button:checked ~ .menu-btn {
+  color: gray;
+  background-color: transparent;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+section {
+  padding-top: 70px;
+}
+
+@keyframes rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@media (max-width: 1300px) {
+  .menu ul {
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 1000px) {
+  .menu {
+    height: 100px;
+    overflow: hidden;
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu ul li {
+    padding: 10px;
+  }
+  .menu ul li a {
+    line-height: 15pt;
+  }
+  section {
+    padding-top: 100px;
+  }
+}
+body {
+  background-position: 20% 50%;
+}
+
+.inicio figure img {
+  border-radius: 10px;
+}
+.inicio .credo {
+  font-family: "Alkatra", cursive;
+}
+
+@media (max-width: 800px) {
+  .inicio div {
+    font-size: 0.8rem;
+  }
+  .inicio .figure-img {
+    width: 80%;
+  }
+}
+@media (max-width: 800px) {
+  .escudo img {
+    max-width: 150px;
+  }
+}
+.history .old-times, .history .old-times-battle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.history .old-times-battle img {
+  margin: 15px;
+}
+.history .list-group {
+  z-index: -2;
+  background-color: transparent;
+}
+.history .list-group .list-group-item {
+  background-color: transparent;
+}
+.history .card {
+  z-index: -2;
+  margin-top: 20px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.history .list-group-numbered {
+  z-index: -2;
+}
+.history .list-group-numbered .list-group-item {
+  z-index: -2;
+}
+.history .tipology .tipology-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.history .tipology .tipology-images img {
+  width: 600px;
+}
+
+@media (max-width: 800px) {
+  .history img {
+    max-width: 300px;
+  }
+  .history .card {
+    flex-direction: column;
+  }
+  .history .old-times, .history .old-times-battle {
+    display: flex;
+    flex-direction: column;
+  }
+  .history .tipology h5 {
+    margin: 30px 0;
+  }
+  .history .tipology .tipology-images {
+    order: 1;
+  }
+  section div {
+    font-size: 0.8rem;
+  }
+}
+.contactanos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactanos .emails {
+  z-index: -2;
+  width: fit-content;
+  margin: 10px;
+}
+.contactanos .emails .input-group {
+  margin: 5px;
+}
+
+@media (max-width: 800px) {
+  img {
+    max-width: 300px;
+  }
+  .emails .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .emails .input-group label {
+    width: 300px;
+  }
+  .emails .input-group a {
+    border-radius: 2px;
+    background-color: #fff;
+  }
+}
+.beneficios .list-group-item {
+  z-index: -2;
+  width: fit-content;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  section .error {
+    max-width: 300px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

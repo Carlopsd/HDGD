@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body{
+    background-position : 20% 50%;
+}
+
+.inicio{
+    figure{
+        img{
+            border-radius: 10px;
+        }
+    }
+    .credo{
+        font-family: 'Alkatra', cursive;
+}
+}
+
+@media (max-width:800px){
+    .inicio{
+        
+        div{
+            font-size: 0.8rem;
+        }
+        
+        .figure-img{
+            width: 80%;
+        }
+    }
+}
