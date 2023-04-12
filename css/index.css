@@ -31,14 +31,14 @@ body {
   height: 100%;
   width: 100%;
   overflow-y: scroll;
-  clip-path: circle(15px at calc(100% - 45px) 45px);
-  transition: all 0.3s ease-in-out;
+  clip-path: circle(15px at calc(7% - 45px) 45px);
+  transition: all 0.2s ease-in-out;
 }
 .menu-btn {
   background-color: #fff;
   position: fixed;
   z-index: 2;
-  right: 20px;
+  left: 20px;
   top: 20px;
   height: 50px;
   width: 50px;
@@ -47,7 +47,7 @@ body {
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -106,14 +106,6 @@ section {
   padding-top: 70px;
 }
 
-@keyframes rotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
 @media (max-width: 1300px) {
   .menu ul {
     overflow-x: scroll;
