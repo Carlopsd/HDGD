@@ -1,0 +1,15 @@
+.solicitud{
+    @extend .vocabulario;
+    .alert{
+        z-index: -2;
+    }
+}
+@media (max-width: 800px) {
+    .solicitud{
+        .table{
+            img{
+                max-width: 100px;
+            }
+        }
+    }
+}

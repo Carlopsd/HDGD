@@ -295,14 +295,23 @@ body {
     max-width: 300px;
   }
 }
-.vocabulario .table {
+.vocabulario .table, .solicitud .table {
   max-width: 500px;
   width: fit-content;
 }
-.vocabulario .table td {
+.vocabulario .table td, .solicitud .table td {
   text-align: center;
 }
 
+.solicitud .alert {
+  z-index: -2;
+}
+
+@media (max-width: 800px) {
+  .solicitud .table img {
+    max-width: 100px;
+  }
+}
 @media (max-width: 800px) {
   section .error {
     max-width: 300px;
