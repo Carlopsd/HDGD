@@ -1,6 +1,9 @@
 .vocabulario{
     .table{
-        max-width: 200px;
-        
+        max-width: 500px;
+        width: fit-content;
+        td{
+            text-align: center;
+        }
     }
 }

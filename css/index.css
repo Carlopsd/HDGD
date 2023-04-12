@@ -296,7 +296,11 @@ body {
   }
 }
 .vocabulario .table {
-  max-width: 200px;
+  max-width: 500px;
+  width: fit-content;
+}
+.vocabulario .table td {
+  text-align: center;
 }
 
 @media (max-width: 800px) {

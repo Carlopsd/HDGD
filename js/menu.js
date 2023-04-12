@@ -22,7 +22,6 @@ window.onload=function(){
                     <img class="logo" src="../media/LOGO/superlogopeque.jpg" alt="">
                 </ul>
     </nav>`;
-
     checkActive();
 }
 
