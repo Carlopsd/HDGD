@@ -136,18 +136,18 @@ body {
   background-position: 20% 50%;
 }
 
-.inicio figure img {
+.inicio figure img, .compromiso figure img {
   border-radius: 10px;
 }
-.inicio .credo {
+.inicio .credo, .compromiso .credo {
   font-family: "Alkatra", cursive;
 }
 
 @media (max-width: 800px) {
-  .inicio div {
+  .inicio div, .compromiso div {
     font-size: 0.8rem;
   }
-  .inicio .figure-img {
+  .inicio .figure-img, .compromiso .figure-img {
     width: 80%;
   }
 }
