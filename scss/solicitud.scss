@@ -3,6 +3,40 @@
     .alert{
         z-index: -2;
     }
+    @mixin belts($class,$color){
+        .#{$class}{
+            color: $color;
+        }
+    }
+    @include belts("amarillo", #ffc300);
+    @include belts("naranja", #e85d04);
+    @include belts("verde", #588157);
+    @include belts("azul", blue);
+    @include belts("morado", purple);
+    @include belts("marron", brown);
+    @include belts("rojo", #d00000);
+
+    @include belts("gold", #b69121);
+    @include belts("azul-table", #003566);
+    @include belts("verde-table", #007f5f);
+    .table{
+        border-collapse: separate;
+        font-size: 0.9rem;
+        tr{ 
+            th{
+                border: solid 1px #8d99ae;
+                
+            }
+            td{
+                @extend th;
+            }
+            .empty{
+                min-width: 100px;
+            }
+        }
+            
+        
+    }
 }
 @media (max-width: 800px) {
     .solicitud{

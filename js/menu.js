@@ -26,7 +26,6 @@ window.onload=function(){
     checkActive();
 
     if(screen.width>1100){
-        console.log(screen.width)
         document.getElementById("button").checked=true;
     }
 }
@@ -133,8 +132,8 @@ function getSwords(){
     let espadas="";
     swordData.forEach((valor,clave)=>{
         espadas+= `
-        <dt class="col-sm-3 fst-italic">${clave}:</dt>
-        <dd class="col-sm-9 fw-semibold">${valor}</dd>
+        <dt class="fst-italic">${clave}:</dt>
+        <dd class="fw-semibold">${valor}</dd>
         `
     });
     document.getElementById("lista-espadas").innerHTML=espadas;

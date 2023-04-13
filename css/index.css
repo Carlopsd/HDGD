@@ -298,6 +298,46 @@ body {
 .solicitud .alert {
   z-index: -2;
 }
+.solicitud .amarillo {
+  color: #ffc300;
+}
+.solicitud .naranja {
+  color: #e85d04;
+}
+.solicitud .verde {
+  color: #588157;
+}
+.solicitud .azul {
+  color: blue;
+}
+.solicitud .morado {
+  color: purple;
+}
+.solicitud .marron {
+  color: brown;
+}
+.solicitud .rojo {
+  color: #d00000;
+}
+.solicitud .gold {
+  color: #b69121;
+}
+.solicitud .azul-table {
+  color: #003566;
+}
+.solicitud .verde-table {
+  color: #007f5f;
+}
+.solicitud .table {
+  border-collapse: separate;
+  font-size: 0.9rem;
+}
+.solicitud .table tr th, .solicitud .table tr td {
+  border: solid 1px #8d99ae;
+}
+.solicitud .table tr .empty {
+  min-width: 100px;
+}
 
 @media (max-width: 800px) {
   .solicitud .table img {
