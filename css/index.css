@@ -347,6 +347,13 @@ body {
 .entrenamiento .buttons {
   margin: 30px;
 }
+.entrenamiento .buttons .btn {
+  margin: 10px;
+  box-shadow: #000 2px 2px 2px;
+}
+.entrenamiento .buttons .btn:active {
+  box-shadow: none;
+}
 
 @media (max-width: 800px) {
   section .error {
