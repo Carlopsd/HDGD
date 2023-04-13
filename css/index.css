@@ -344,6 +344,10 @@ body {
     max-width: 100px;
   }
 }
+.entrenamiento .buttons {
+  margin: 30px;
+}
+
 @media (max-width: 800px) {
   section .error {
     max-width: 300px;
