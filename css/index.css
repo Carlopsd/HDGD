@@ -341,7 +341,10 @@ body {
 
 @media (max-width: 800px) {
   .solicitud .table img {
-    max-width: 100px;
+    max-width: 150px;
+  }
+  .solicitud .table th, .solicitud .table tr td {
+    font-size: 0.7rem;
   }
 }
 .entrenamiento .buttons {
