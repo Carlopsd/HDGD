@@ -25,10 +25,10 @@
         tr{ 
             th{
                 border: solid 1px #8d99ae;
-                
+                font-size: 1rem;
             }
             td{
-                @extend th;
+                @extend th; 
             }
             .empty{
                 min-width: 100px;

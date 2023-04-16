@@ -334,6 +334,7 @@ body {
 }
 .solicitud .table tr th, .solicitud .table tr td {
   border: solid 1px #8d99ae;
+  font-size: 1rem;
 }
 .solicitud .table tr .empty {
   min-width: 100px;
@@ -364,6 +365,10 @@ body {
 }
 .entrenamiento ul .list-group-item {
   max-width: fit-content;
+}
+
+.representantes figure {
+  margin: 10px;
 }
 
 @media (max-width: 800px) {
