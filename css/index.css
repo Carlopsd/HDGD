@@ -354,6 +354,14 @@ body {
 .entrenamiento .buttons .btn:active {
   box-shadow: none;
 }
+.entrenamiento ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.entrenamiento ul .list-group-item {
+  max-width: fit-content;
+}
 
 @media (max-width: 800px) {
   section .error {
